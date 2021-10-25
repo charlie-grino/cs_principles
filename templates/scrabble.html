@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- root of the document which is html -->
+<html>
+  <!-- everything before the body -->
+  <head>
+    <!-- determines character set -->
+    <meta charset="utf-8">
+    <!-- name of the document -->
+    <title>Scrabble</title>
+    <!-- inserts the scrabble code -->
+    <script src="js/scrabbleInput.js"></script>
+  </head>
+  <!-- body is content of document -->
+  <body>
+    <!-- input that is typed in by user -->
+    <input type="text" placeholder="Type " id="inputId">
+    <!-- the submit button  that runs the getInputValue function which will give score -->
+    <button type="button" onclick="getInputValue();">Get Value</button>
+    <!-- gives the output or score -->
+    <p id="output">Scrabble</p>   
+  </body>
+</html>

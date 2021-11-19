@@ -6,11 +6,62 @@
     <script>
         // set attributes of an object
         let dog = {
-            Name: "Radar"
-            Age: '1',
+            Name: "Radar",
+            Age: 1,
             Type: "Airdale",
             Gender: "Male",
             Weight: 50,
+        }
+
+        // welcome to constructors...
+        function dog(name, age){
+            this.name = name;
+            this.age = age;
+            this.favoriteToys = ["Bone", "Stick", "Ball"];
+            this.isAlive = true;
+            this.speak = function(bark){
+                console.log(bark);
+            }
+        }
+
+        // this is a class
+        class Dog{
+            constructor(name, age){
+                this.name = name;
+                this.age = age;
+                this.x = x;
+                this.y = y;
+                this.w = w;
+                this.h = h;
+            }
+            bark(){
+                console.log("WOOF");
+            }
+            run(){
+
+            }
+        }
+
+        let myDog = new dog("Doofus", 2);
+        let yourDog = new Dog("Roofus", 4);
+        yourDog.
+        console.log(myDog.name);
+        console.log(myDog.age);
+        console.log(yourDog.name);
+        console.log(yourDog.age);
+        console.log(favoriteToys);
+        console.log(yourDog.isAlive);
+        console.log(yourdog);
+        console.log(Dog);
+        
+        // call method from yourDog instance
+        function input() {
+            // selecting the input element and get its value
+            return document.getElementById("inputId").value;
+        }
+
+        function process() {
+            // set a variable to whatever is in the HTML field user
         }
     </script>
 </html>
